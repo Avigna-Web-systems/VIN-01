@@ -1,0 +1,64 @@
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vsidx
+
+# =========================
+# Build output folders
+# =========================
+bin/
+obj/
+PrecompiledWeb/
+
+# =========================
+# ASP.NET specific
+# =========================
+App_Data/*.mdf
+App_Data/*.ldf
+
+# =========================
+# Logs & temp files
+# =========================
+*.log
+*.tmp
+*.temp
+
+# =========================
+# OS generated files
+# =========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# =========================
+# Docker
+# =========================
+**/docker-compose.override.yml
+
+# =========================
+# NuGet
+# =========================
+packages/
+*.nupkg
+
+# =========================
+# Secrets (IMPORTANT)
+# =========================
+appsettings.*.json
+!appsettings.json
+
+# =========================
+# IIS Express
+# =========================
+.iisexpress/
+
+# =========================
+# Visual Studio Cache
+# =========================
+*.cache
