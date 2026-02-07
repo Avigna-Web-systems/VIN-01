@@ -24,10 +24,11 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Set lowercase repo owner
+    - name: Set lowercase owner name
       shell: pwsh
       run: |
-        echo "OWNER_LOWER=${{ github.repository_owner.ToLower() }}" >> $env:GITHUB_ENV
+        $owner = "${{ github.repository_owner }}".ToLower()
+        "OWNER_LOWER=$owner" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
     - name: Build Docker image
       run: |
